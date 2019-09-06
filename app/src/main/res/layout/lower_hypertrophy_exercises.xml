@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/up_day_exercises"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lh1"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/squat" />
+
+    <TextView
+        android:id="@+id/lh1_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/lh2"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/lunge" />
+
+    <TextView
+        android:id="@+id/lh2_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/lh3"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/leg_extension" />
+
+    <TextView
+        android:id="@+id/lh3_details"
+        style="@style/exercise_details"
+        android:text="@string/leg_heavy_hyp_details" />
+
+    <TextView
+        android:id="@+id/lh4"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/leg_curl" />
+
+    <TextView
+        android:id="@+id/lh4_details"
+        style="@style/exercise_details"
+        android:text="@string/leg_heavy_hyp_details" />
+
+    <TextView
+        android:id="@+id/lh5"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/seated_calf_raise" />
+
+    <TextView
+        android:id="@+id/lh5_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/lh6"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/calf_press" />
+
+    <TextView
+        android:id="@+id/lh6_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/empty_lh"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity" />
+
+</LinearLayout>

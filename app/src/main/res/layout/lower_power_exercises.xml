@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/up_day_exercises"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lp1"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/squat" />
+    <TextView
+        android:id="@+id/lp1_details"
+        style="@style/exercise_details"
+        android:text="@string/compound_details" />
+
+    <TextView
+        android:id="@+id/lp2"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/deadlift" />
+    <TextView
+        android:id="@+id/lp2_details"
+        style="@style/exercise_details"
+        android:text="@string/compound_details" />
+
+    <TextView
+        android:id="@+id/lp3"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/leg_press" />
+    <TextView
+        android:id="@+id/lp3_details"
+        style="@style/exercise_details"
+        android:text="@string/leg_press_details" />
+
+    <TextView
+        android:id="@+id/lp4"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/leg_curl" />
+    <TextView
+        android:id="@+id/lp4_details"
+        style="@style/exercise_details"
+        android:text="@string/leg_curl_power_details" />
+
+    <TextView
+        android:id="@+id/lp5"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/calf" />
+    <TextView
+        android:id="@+id/lp5_details"
+        style="@style/exercise_details"
+        android:text="@string/calf_raise_details" />
+
+    <TextView
+        android:id="@+id/empty_lp"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"/>
+
+</LinearLayout>

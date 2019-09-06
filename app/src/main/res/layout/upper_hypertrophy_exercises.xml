@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/up_day_exercises"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/uh1"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/inc_bb_press" />
+
+    <TextView
+        android:id="@+id/uh1_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/uh2"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/chest_fly" />
+
+    <TextView
+        android:id="@+id/uh2_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/uh3"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/cable_row" />
+
+    <TextView
+        android:id="@+id/uh3_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/uh4"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/one_arm_dumbbell_row" />
+
+    <TextView
+        android:id="@+id/uh4_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/uh5"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/dumbbell_lateral_raise" />
+
+    <TextView
+        android:id="@+id/uh5_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/uh6"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/seated_incline_dumbbell_curl" />
+
+    <TextView
+        android:id="@+id/uh6_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/uh7"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/cable_triceps_extension" />
+
+    <TextView
+        android:id="@+id/uh7_details"
+        style="@style/exercise_details"
+        android:text="@string/standard_hyp_details" />
+
+    <TextView
+        android:id="@+id/empty_uh"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity" />
+
+
+</LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/up_day_exercises"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/up1"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/barbell_bench_press" />
+
+    <TextView
+        android:id="@+id/up1_details"
+        style="@style/exercise_details"
+        android:text="@string/compound_details" />
+
+    <TextView
+        android:id="@+id/up2"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/dumbbell_incline_bench_press" />
+
+    <TextView
+        android:id="@+id/up2_details"
+        style="@style/exercise_details"
+        android:text="@string/sec_compound_details" />
+
+    <TextView
+        android:id="@+id/up3"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/barbell_row" />
+
+    <TextView
+        android:id="@+id/up3_details"
+        style="@style/exercise_details"
+        android:text="@string/compound_details" />
+
+    <TextView
+        android:id="@+id/up4"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/lat_pulldown" />
+
+    <TextView
+        android:id="@+id/up4_details"
+        style="@style/exercise_details"
+        android:text="@string/sec_compound_details" />
+
+    <TextView
+        android:id="@+id/up5"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/overhead_press" />
+
+    <TextView
+        android:id="@+id/up5_details"
+        style="@style/exercise_details"
+        android:text="@string/ohp_details" />
+
+    <TextView
+        android:id="@+id/up6"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/barbell_curl" />
+
+    <TextView
+        android:id="@+id/up6_details"
+        style="@style/exercise_details"
+        android:text="@string/arm_accessory_details" />
+
+
+    <TextView
+        android:id="@+id/up7"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity"
+        android:text="@string/skullcrushers" />
+
+    <TextView
+        android:id="@+id/up7_details"
+        style="@style/exercise_details"
+        android:text="@string/arm_accessory_details" />
+
+    <TextView
+        android:id="@+id/empty_up"
+        style="@style/exercise_label"
+        android:onClick="launchExerciseActivity" />
+
+</LinearLayout>
