@@ -2,13 +2,13 @@ package com.bhumin.android.phul;
 
 class Exercise {
     public String name;
-    int minSets;
-    int maxSets;
-    int minReps;
-    int maxReps;
-    int rest;
+    private int minSets;
+    private int maxSets;
+    private int minReps;
+    private int maxReps;
+    private int rest;
 
-    public Exercise(String name, int minSets, int maxSets, int minReps, int maxReps, int rest) {
+    Exercise(String name, int minSets, int maxSets, int minReps, int maxReps, int rest) {
         this.name = name;
         this.minSets = minSets;
         this.maxSets = maxSets;
@@ -17,7 +17,7 @@ class Exercise {
         this.rest = rest;
     }
 
-    public String getDescription() {
+    String getDescription() {
         String sets;
         if(minSets == maxSets) {
             sets = "" + minSets;

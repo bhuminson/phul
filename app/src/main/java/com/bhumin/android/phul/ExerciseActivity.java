@@ -14,9 +14,6 @@ import android.widget.TextView;
 
 public class ExerciseActivity extends AppCompatActivity {
 
-    private Day mDay;
-    private Exercise mExercise;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,8 +33,8 @@ public class ExerciseActivity extends AppCompatActivity {
         Intent intent = getIntent();
         int day_index = intent.getIntExtra("DAY_INDEX", 0);
         int exercise_index = intent.getIntExtra("EXERCISE_INDEX", 0);
-        mDay = Routine.days.get(day_index);
-        mExercise = mDay.exercises.get(exercise_index);
+        Day mDay = Routine.days.get(day_index);
+        Exercise mExercise = mDay.exercises.get(exercise_index);
         setTitle(mExercise.name);
 
         TextView subtitle = findViewById(R.id.subtitle);

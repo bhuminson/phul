@@ -2,13 +2,13 @@ package com.bhumin.android.phul;
 
 import java.util.ArrayList;
 
-public class Routine {
+class Routine {
 
-    public static final Day UpperPower;
-    public static final Day LowerPower;
-    public static final Day UpperHypertrophy;
-    public static final Day LowerHypertrophy;
-    public static final ArrayList<Day> days;
+    private static final Day UpperPower;
+    private static final Day LowerPower;
+    private static final Day UpperHypertrophy;
+    private static final Day LowerHypertrophy;
+    static final ArrayList<Day> days;
 
     static {
         UpperPower = new Day("Upper Power", R.layout.upper_power_exercises);

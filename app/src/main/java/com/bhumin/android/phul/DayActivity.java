@@ -3,23 +3,15 @@ package com.bhumin.android.phul;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewStub;
-import android.widget.TextView;
 
 public class DayActivity extends AppCompatActivity {
 
-    private Day mDay;
     private int day_index;
 
     @Override
@@ -28,12 +20,13 @@ public class DayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_day);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Intent intent = getIntent();
         day_index = intent.getIntExtra("DAY_INDEX", 0);
 
-        mDay = Routine.days.get(day_index);
+        Day mDay = Routine.days.get(day_index);
         ViewStub stub = findViewById(R.id.layout_stub);
         setTitle(mDay.name);
         stub.setLayoutResource(mDay.layout_resource);
