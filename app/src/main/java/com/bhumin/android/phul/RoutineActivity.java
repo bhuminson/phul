@@ -6,7 +6,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -20,17 +22,9 @@ public class RoutineActivity extends AppCompatActivity {
     }
 
     public void launchDayActivity(View view) {
-        String day_name =  (String)((TextView)view).getText();
-        switch(view.getId()) {
-            case R.id.upper_power_text:
-            case R.id.lower_power_text:
-            case R.id.upper_hypertrophy_text:
-            case R.id.lower_hypertrophy_text: {
-                Intent intent = new Intent(this, DayActivity.class);
-                intent.putExtra(getString(R.string.day_name), day_name);
-                startActivity(intent);
-                break;
-            }
-        }
-    }
+        int day_index  = ((ViewGroup)findViewById(R.id.days_layout)).indexOfChild(view);
+        Intent intent = new Intent(this, DayActivity.class);
+        intent.putExtra("DAY_INDEX", day_index);
+        startActivity(intent);
+     }
 }
