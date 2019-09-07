@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.bhumin.android.phul">
 
     <application
@@ -12,12 +13,15 @@
         <activity
             android:name=".ExerciseActivity"
             android:label="@string/title_activity_exercise"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:parentActivityName=".DayActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:targetApi="jelly_bean" />
         <activity
             android:name=".DayActivity"
             android:label="@string/title_activity_day"
             android:parentActivityName=".RoutineActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar"
+            tools:targetApi="jelly_bean" />
         <activity android:name=".RoutineActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

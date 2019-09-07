@@ -38,7 +38,7 @@ class Exercise {
         if(minutes > 0) {
             restString = "" + minutes + " min ";
             if(seconds != 0) {
-                restString += seconds + "sec ";
+                restString += seconds + " sec ";
             }
             restString += "rest";
         } else {

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/days_layout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/days_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -10,42 +10,26 @@
 
     <TextView
         android:id="@+id/upper_power_text"
-        style="@style/generic"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        style="@style/day_label"
         android:onClick="launchDayActivity"
-        android:padding="15dp"
-        android:text="@string/upper_power"
-        app:layout_constraintVertical_weight="1" />
+        android:text="@string/upper_power"/>
 
     <TextView
         android:id="@+id/lower_power_text"
-        style="@style/generic"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        style="@style/day_label"
         android:onClick="launchDayActivity"
-        android:padding="15dp"
         android:text="@string/lower_power" />
 
     <TextView
         android:id="@+id/upper_hypertrophy_text"
-        style="@style/generic"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        style="@style/day_label"
         android:onClick="launchDayActivity"
-        android:padding="15dp"
         android:text="@string/upper_hypertrophy" />
 
     <TextView
         android:id="@+id/lower_hypertrophy_text"
-        style="@style/generic"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
+        style="@style/day_label"
         android:onClick="launchDayActivity"
-        android:padding="15dp"
         android:text="@string/lower_hypertrophy" />
+
 </LinearLayout>
