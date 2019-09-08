@@ -11,19 +11,31 @@
         android:id="@+id/upper_power_text"
         style="@style/day_label"
         android:onClick="launchDayActivity"
-        android:text="@string/upper_power"/>
+        android:text="@string/upper_power" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <TextView
         android:id="@+id/lower_power_text"
         style="@style/day_label"
         android:onClick="launchDayActivity"
         android:text="@string/lower_power" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <TextView
         android:id="@+id/upper_hypertrophy_text"
         style="@style/day_label"
         android:onClick="launchDayActivity"
         android:text="@string/upper_hypertrophy" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
 
     <TextView
         android:id="@+id/lower_hypertrophy_text"

@@ -84,8 +84,11 @@
 
     <TextView
         android:id="@+id/empty_uh"
-        style="@style/exercise_label"
-        android:onClick="launchExerciseActivity" />
+        style="@style/exercise_label" />
+
+    <TextView
+        android:id="@+id/empty_uh2"
+        style="@style/exercise_details"/>
 
 
 </LinearLayout>

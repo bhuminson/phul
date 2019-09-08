@@ -10,6 +10,7 @@
         style="@style/exercise_label"
         android:onClick="launchExerciseActivity"
         android:text="@string/squat" />
+
     <TextView
         android:id="@+id/lp1_details"
         style="@style/exercise_details"
@@ -20,6 +21,7 @@
         style="@style/exercise_label"
         android:onClick="launchExerciseActivity"
         android:text="@string/deadlift" />
+
     <TextView
         android:id="@+id/lp2_details"
         style="@style/exercise_details"
@@ -30,6 +32,7 @@
         style="@style/exercise_label"
         android:onClick="launchExerciseActivity"
         android:text="@string/leg_press" />
+
     <TextView
         android:id="@+id/lp3_details"
         style="@style/exercise_details"
@@ -40,6 +43,7 @@
         style="@style/exercise_label"
         android:onClick="launchExerciseActivity"
         android:text="@string/leg_curl" />
+
     <TextView
         android:id="@+id/lp4_details"
         style="@style/exercise_details"
@@ -50,6 +54,7 @@
         style="@style/exercise_label"
         android:onClick="launchExerciseActivity"
         android:text="@string/calf" />
+
     <TextView
         android:id="@+id/lp5_details"
         style="@style/exercise_details"
@@ -57,7 +62,26 @@
 
     <TextView
         android:id="@+id/empty_lp"
-        style="@style/exercise_label"
-        android:onClick="launchExerciseActivity"/>
+        style="@style/exercise_label" />
+
+    <TextView
+        android:id="@+id/empty_lp2"
+        style="@style/exercise_details" />
+
+    <TextView
+        android:id="@+id/empty_lp3"
+        style="@style/exercise_label" />
+
+    <TextView
+        android:id="@+id/empty_lp4"
+        style="@style/exercise_details" />
+
+    <TextView
+        android:id="@+id/empty_lp5"
+        style="@style/exercise_label" />
+
+    <TextView
+        android:id="@+id/empty_lp6"
+        style="@style/exercise_details" />
 
 </LinearLayout>

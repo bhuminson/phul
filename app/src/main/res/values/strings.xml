@@ -39,4 +39,5 @@
     <string name="calf_raise_details">4 x 6–10, 1 min 30 sec rest</string>
     <string name="standard_hyp_details">3–4 x 8–12, 1 min 30 sec rest</string>
     <string name="leg_heavy_hyp_details">3–4 x 10–15, 1 min 30 sec rest</string>
+    <string name="save">Save</string>
 </resources>

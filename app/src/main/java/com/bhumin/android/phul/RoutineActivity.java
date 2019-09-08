@@ -15,10 +15,17 @@ public class RoutineActivity extends AppCompatActivity {
         setContentView(R.layout.activity_routine);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        overridePendingTransition(R.anim.new_from_left, R.anim.old_to_right);
+    }
+
     public void launchDayActivity(View view) {
-        int day_index  = ((ViewGroup)findViewById(R.id.days_layout)).indexOfChild(view);
+        int day_index = ((ViewGroup) findViewById(R.id.days_layout)).indexOfChild(view) / 2;
         Intent intent = new Intent(this, DayActivity.class);
         intent.putExtra("DAY_INDEX", day_index);
         startActivity(intent);
-     }
+        overridePendingTransition(R.anim.new_from_right, R.anim.old_to_left);
+    }
 }

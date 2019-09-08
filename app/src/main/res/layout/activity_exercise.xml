@@ -7,6 +7,20 @@
     android:layout_height="match_parent"
     tools:context=".ExerciseActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize">
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/exercise_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout2"
         android:layout_width="match_parent"
@@ -20,12 +34,6 @@
             android:background="?attr/colorPrimary"
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
-        <TextView
-            android:id="@+id/subtitle"
-            style="@style/exercise_subtitle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
     </com.google.android.material.appbar.AppBarLayout>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -35,7 +43,5 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@drawable/timer_icon" />
-
-    <include layout="@layout/content_exercise" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
