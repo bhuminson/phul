@@ -16,21 +16,26 @@
         android:textColor="@android:color/black"
         android:textSize="16sp" />
 
-    <Button
-        android:id="@+id/add_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:onClick="addSetToSession"
-        android:text="@string/add_set" />
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
 
-    <Button
-        android:id="@+id/delete_set"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:onClick="deleteSetInSession"
-        android:text="@string/delete_set" />
+        <Button
+            android:id="@+id/add_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addSetToCurrentSession"
+            android:text="@string/add_set" />
+
+        <Button
+            android:id="@+id/delete_set"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deleteSetInCurrentSession"
+            android:text="@string/delete_set" />
+    </TableRow>
 
     <View
         android:id="@+id/divider"
