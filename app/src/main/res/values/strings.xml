@@ -41,4 +41,11 @@
     <string name="leg_heavy_hyp_details">3–4 x 10–15, 1 min 30 sec rest</string>
     <string name="save">Save</string>
     <string name="rest">Rest:</string>
+    <string name="current_session">Current Session</string>
+    <string name="add_set">Add Set</string>
+    <string name="delete_set">Delete Set</string>
+    <string name="weight">weight</string>
+    <string name="reps">reps</string>
+    <string name="prev_session">Previous Session</string>
+    <string name="dynamic_string_label">Set %1d</string>
 </resources>

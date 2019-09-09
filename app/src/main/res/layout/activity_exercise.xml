@@ -18,7 +18,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             app:layout_constraintStart_toEndOf="@+id/rest_label"
             app:layout_constraintTop_toBottomOf="@+id/subtitle" />
@@ -50,6 +49,20 @@
             android:layout_marginTop="4dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintTop_toBottomOf="@id/rest_label" />
+
+        <include
+            android:id="@+id/current_session"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/divider"
+            layout="@layout/current_session" />
+
+        <include
+            android:id="@+id/previous_session_layout"
+            app:layout_constraintTop_toBottomOf="@id/current_session"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/previous_session"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

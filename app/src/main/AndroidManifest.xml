@@ -13,7 +13,6 @@
         <activity
             android:name=".ExerciseActivity"
             android:label="@string/title_activity_exercise"
-            android:parentActivityName=".DayActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             tools:targetApi="jelly_bean" />

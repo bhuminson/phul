@@ -2,11 +2,11 @@ package com.bhumin.android.phul;
 
 class Exercise {
     public String name;
-    private int minSets;
-    private int maxSets;
-    private int minReps;
-    private int maxReps;
-    private int rest;
+    public int minSets;
+    public int maxSets;
+    public int minReps;
+    public int maxReps;
+    public int rest;
 
     Exercise(String name, int minSets, int maxSets, int minReps, int maxReps, int rest) {
         this.name = name;
