@@ -14,15 +14,19 @@
             android:name=".ExerciseActivity"
             android:label="@string/title_activity_exercise"
             android:parentActivityName=".DayActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             tools:targetApi="jelly_bean" />
         <activity
             android:name=".DayActivity"
             android:label="@string/title_activity_day"
             android:parentActivityName=".RoutineActivity"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar"
             tools:targetApi="jelly_bean" />
-        <activity android:name=".RoutineActivity">
+        <activity
+            android:name=".RoutineActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />

@@ -24,7 +24,7 @@ public class DayActivity extends AppCompatActivity {
         setContentView(R.layout.activity_day);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);//todo make textviews generate with adapter
-        //todo implement timer
+        //todo setup sharedpreference for last session
         assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

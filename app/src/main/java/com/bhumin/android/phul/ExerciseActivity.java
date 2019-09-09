@@ -10,9 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.os.SystemClock;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Chronometer;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,14 +26,17 @@ public class ExerciseActivity extends AppCompatActivity {
         setContentView(R.layout.activity_exercise);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        assert getSupportActionBar() != null;
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        final Chronometer rest_timer = findViewById(R.id.rest_timer);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                rest_timer.setBase(SystemClock.elapsedRealtime() - 500);
+                rest_timer.start();
+                Toast.makeText(getBaseContext(), "Rest Timer Started", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -44,6 +49,7 @@ public class ExerciseActivity extends AppCompatActivity {
 
         TextView subtitle = findViewById(R.id.subtitle);
         subtitle.setText(mExercise.getDescription());
+        rest_timer.setTextColor(subtitle.getCurrentTextColor());
     }
 
     @Override
