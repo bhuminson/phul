@@ -35,6 +35,7 @@
             android:layout_height="wrap_content"
             android:onClick="deleteSetInCurrentSession"
             android:text="@string/delete_set" />
+
     </TableRow>
 
     <View
