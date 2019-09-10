@@ -39,6 +39,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="@string/rest"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/secondary_text_material_light"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/subtitle" />
 
@@ -46,7 +49,7 @@
             android:id="@+id/divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:background="@android:color/darker_gray"
             app:layout_constraintTop_toBottomOf="@id/rest_label" />
 
